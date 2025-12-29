@@ -23,11 +23,11 @@ navLinks.forEach(link => {
   });
 });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   getTodayInSpace();
-//   getLaunches();
-//   getPlanets();
-// });
+document.addEventListener("DOMContentLoaded", () => {
+  getTodayInSpace();
+  getLaunches();
+  getPlanets();
+});
 
 
 async function getTodayInSpace() {
@@ -36,7 +36,7 @@ async function getTodayInSpace() {
 
   try {
     const res = await fetch(
-      "https://api.nasa.gov/planetary/apod?api_key=YOUR_REAL_API_KEY"
+      "https://api.nasa.gov/planetary/apod?api_key=x1A6bhfyHySocIDkCNtet8n5Ex7phsU4BAyXc3m9"
     );
 
     if (!res.ok) throw new Error("NASA API Error");
